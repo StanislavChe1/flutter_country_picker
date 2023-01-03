@@ -183,7 +183,6 @@ class _CountryListViewState extends State<CountryListView> {
               ?.countryName(countryCode: country.countryCode)
               ?.replaceAll(RegExp(r"\s+"), " ");
           widget.onSelect(country);
-          Navigator.pop(context);
         },
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 5.0),
